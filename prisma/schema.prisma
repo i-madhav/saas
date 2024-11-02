@@ -20,7 +20,7 @@ model Video {
   publicId       String // will get this from cloudinary when make api call and just going to paste the sstring here
   originalSize   String
   compressedSize String
-  duration       String
+  duration       Float
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
